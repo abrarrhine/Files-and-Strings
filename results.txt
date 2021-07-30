@@ -1,0 +1,314 @@
+Phase 1:  Testing ability to find GIS record offsets.Calling findOffsets()...
+   Correct: reported 1640 offsets
+
+   1 >> score for offset count:  20 / 20
+
+Checking the first 8 reported offsets...
+   reported       correct
+   ----------------------
+        265              265   good!
+        425              425   good!
+        553              553   good!
+        710              710   good!
+        829              829   good!
+        952              952   good!
+       1078             1078   good!
+       1197             1197   good!
+
+   2 >> score for found offsets:  80 / 80
+
+Phase 2:  Testing ability to retrieve GIS records given record offsets.
+   retrieved:  >>892373|Nash Draw|Valley|NM|35|Eddy|015|322250N|1035507W|32.3806773|-103.9185488|322728N|1035124W|32.4578993|-103.8566059|927|3041|Tower Hill South|11/13/1980|<<
+   reference:  >>892373|Nash Draw|Valley|NM|35|Eddy|015|322250N|1035507W|32.3806773|-103.9185488|322728N|1035124W|32.4578993|-103.8566059|927|3041|Tower Hill South|11/13/1980|<<
+   Good, those match!
+
+   retrieved:  >>915677|Rose Gravel Co Plant|Mine|NM|35|Eddy|015|322428N|1041503W|32.4078955|-104.2507824|||||955|3133|Carlsbad West|03/01/1993|<<
+   reference:  >>915677|Rose Gravel Co Plant|Mine|NM|35|Eddy|015|322428N|1041503W|32.4078955|-104.2507824|||||955|3133|Carlsbad West|03/01/1993|<<
+   Good, those match!
+
+   retrieved:  >>2407964|La Huerta Census Designated Place|Census|NM|35|Eddy|015|322656N|1041321W|32.4489837|-104.22263|||||950|3117|Carlsbad East|03/11/2008|05/26/2010<<
+   reference:  >>2407964|La Huerta Census Designated Place|Census|NM|35|Eddy|015|322656N|1041321W|32.4489837|-104.22263|||||950|3117|Carlsbad East|03/11/2008|05/26/2010<<
+   Good, those match!
+
+   retrieved:  >>930962|10261 Water Well|Well|NM|35|Eddy|015|321917N|1042006W|32.3215051|-104.3349498|||||1040|3412|Kitchen Cove|05/01/1994|<<
+   reference:  >>930962|10261 Water Well|Well|NM|35|Eddy|015|321917N|1042006W|32.3215051|-104.3349498|||||1040|3412|Kitchen Cove|05/01/1994|<<
+   Good, those match!
+
+   retrieved:  >>893585|Queen Well|Well|NM|35|Eddy|015|320445N|1040357W|32.0792902|-104.0657653|||||894|2933|Red Bluff|11/13/1980|<<
+   reference:  >>893585|Queen Well|Well|NM|35|Eddy|015|320445N|1040357W|32.0792902|-104.0657653|||||894|2933|Red Bluff|11/13/1980|<<
+   Good, those match!
+
+   3 >> score for retrieved records:  100 / 100
+
+Results for test case 1 follow:
+
+  Test string: 887199|Carlsbad|Populated Place|NM|35|Eddy|015|322514N|1041344W|32.4206736|-104.2288375|||||945|3100|Carlsbad East|11/13/1980|03/21/2008
+
+  Student's string bundle:
+     0:  [887199]
+     1:  [Carlsbad]
+     2:  [Populated Place]
+     3:  [NM]
+     4:  [35]
+     5:  [Eddy]
+     6:  [015]
+     7:  [322514N]
+     8:  [1041344W]
+     9:  [32.4206736]
+    10:  [-104.2288375]
+    11:  []
+    12:  []
+    13:  []
+    14:  []
+    15:  [945]
+    16:  [3100]
+    17:  [Carlsbad East]
+    18:  [11/13/1980]
+
+   score for this test: 20 / 20
+--------------------------------------------------
+Results for test case 2 follow:
+
+  Test string: 936738|Owens Tank|Reservoir|NM|35|Eddy|015|320147N|1044955W|32.0298081|-104.8320177|||||1798|5899|El Paso Gap|12/01/1991|06/24/2011
+
+  Student's string bundle:
+     0:  [936738]
+     1:  [Owens Tank]
+     2:  [Reservoir]
+     3:  [NM]
+     4:  [35]
+     5:  [Eddy]
+     6:  [015]
+     7:  [320147N]
+     8:  [1044955W]
+     9:  [32.0298081]
+    10:  [-104.8320177]
+    11:  []
+    12:  []
+    13:  []
+    14:  []
+    15:  [1798]
+    16:  [5899]
+    17:  [El Paso Gap]
+    18:  [12/01/1991]
+
+   score for this test: 20 / 20
+--------------------------------------------------
+Results for test case 3 follow:
+
+  Test string: 934356|Robert-Sallie Chisum House Historic Site|Building|NM|35|Eddy|015|325032N|1042412W|32.8423345|-104.4032963|||||1030|3379|Artesia|09/01/1994|
+
+  Student's string bundle:
+     0:  [934356]
+     1:  [Robert-Sallie Chisum House Historic Site]
+     2:  [Building]
+     3:  [NM]
+     4:  [35]
+     5:  [Eddy]
+     6:  [015]
+     7:  [325032N]
+     8:  [1042412W]
+     9:  [32.8423345]
+    10:  [-104.4032963]
+    11:  []
+    12:  []
+    13:  []
+    14:  []
+    15:  [1030]
+    16:  [3379]
+    17:  [Artesia]
+    18:  [09/01/1994]
+
+   score for this test: 20 / 20
+--------------------------------------------------
+Results for test case 4 follow:
+
+  Test string: 921001|Hermosa Drive Baptist Church|Church|NM|35|Eddy|015|325032N|1042412W|32.8423345|-104.4032963|||||1030|3379|Artesia|09/01/1993|
+
+  Student's string bundle:
+     0:  [921001]
+     1:  [Hermosa Drive Baptist Church]
+     2:  [Church]
+     3:  [NM]
+     4:  [35]
+     5:  [Eddy]
+     6:  [015]
+     7:  [325032N]
+     8:  [1042412W]
+     9:  [32.8423345]
+    10:  [-104.4032963]
+    11:  []
+    12:  []
+    13:  []
+    14:  []
+    15:  [1030]
+    16:  [3379]
+    17:  [Artesia]
+    18:  [09/01/1993]
+
+   score for this test: 20 / 20
+--------------------------------------------------
+Results for test case 5 follow:
+
+  Test string: 901180|Mexican Lake|Lake|NM|35|Eddy|015|321038N|1040614W|32.1771065|-104.1038129|||||905|2969|Malaga|11/01/1992|06/24/2011
+
+  Student's string bundle:
+     0:  [901180]
+     1:  [Mexican Lake]
+     2:  [Lake]
+     3:  [NM]
+     4:  [35]
+     5:  [Eddy]
+     6:  [015]
+     7:  [321038N]
+     8:  [1040614W]
+     9:  [32.1771065]
+    10:  [-104.1038129]
+    11:  []
+    12:  []
+    13:  []
+    14:  []
+    15:  [905]
+    16:  [2969]
+    17:  [Malaga]
+    18:  [11/01/1992]
+
+   score for this test: 20 / 20
+--------------------------------------------------
+Results for test case 6 follow:
+
+  Test string: 931080|06685 Water Well|Well|NM|35|Eddy|015|321751N|1043839W|32.2976089|-104.6441231|||||1306|4285|Red Bluff Draw|05/01/1994|
+
+  Student's string bundle:
+     0:  [931080]
+     1:  [06685 Water Well]
+     2:  [Well]
+     3:  [NM]
+     4:  [35]
+     5:  [Eddy]
+     6:  [015]
+     7:  [321751N]
+     8:  [1043839W]
+     9:  [32.2976089]
+    10:  [-104.6441231]
+    11:  []
+    12:  []
+    13:  []
+    14:  []
+    15:  [1306]
+    16:  [4285]
+    17:  [Red Bluff Draw]
+    18:  [05/01/1994]
+
+   score for this test: 20 / 20
+--------------------------------------------------
+Results for test case 7 follow:
+
+  Test string: 920269|First Church of the Nazarene|Church|NM|35|Eddy|015|325032N|1042412W|32.8423345|-104.4032963|||||1030|3379|Artesia|08/01/1993|
+
+  Student's string bundle:
+     0:  [920269]
+     1:  [First Church of the Nazarene]
+     2:  [Church]
+     3:  [NM]
+     4:  [35]
+     5:  [Eddy]
+     6:  [015]
+     7:  [325032N]
+     8:  [1042412W]
+     9:  [32.8423345]
+    10:  [-104.4032963]
+    11:  []
+    12:  []
+    13:  []
+    14:  []
+    15:  [1030]
+    16:  [3379]
+    17:  [Artesia]
+    18:  [08/01/1993]
+
+   score for this test: 20 / 20
+--------------------------------------------------
+Results for test case 8 follow:
+
+  Test string: 901212|Dillahunty Ranch|Locale|NM|35|Eddy|015|320210N|1041837W|32.0362315|-104.3102193|||||1036|3399|Jumping Spring|11/01/1992|
+
+  Student's string bundle:
+     0:  [901212]
+     1:  [Dillahunty Ranch]
+     2:  [Locale]
+     3:  [NM]
+     4:  [35]
+     5:  [Eddy]
+     6:  [015]
+     7:  [320210N]
+     8:  [1041837W]
+     9:  [32.0362315]
+    10:  [-104.3102193]
+    11:  []
+    12:  []
+    13:  []
+    14:  []
+    15:  [1036]
+    16:  [3399]
+    17:  [Jumping Spring]
+    18:  [11/01/1992]
+
+   score for this test: 20 / 20
+--------------------------------------------------
+Results for test case 9 follow:
+
+  Test string: 896743|Wood Draw|Valley|NM|35|Eddy|015|321032N|1035915W|32.1756789|-103.9874316|320919N|1035312W|32.1552778|-103.8866667|881|2890|Pierce Canyon|11/13/1980|
+
+  Student's string bundle:
+     0:  [896743]
+     1:  [Wood Draw]
+     2:  [Valley]
+     3:  [NM]
+     4:  [35]
+     5:  [Eddy]
+     6:  [015]
+     7:  [321032N]
+     8:  [1035915W]
+     9:  [32.1756789]
+    10:  [-103.9874316]
+    11:  [320919N]
+    12:  [1035312W]
+    13:  [32.1552778]
+    14:  [-103.8866667]
+    15:  [881]
+    16:  [2890]
+    17:  [Pierce Canyon]
+    18:  [11/13/1980]
+
+   score for this test: 20 / 20
+--------------------------------------------------
+Results for test case 10 follow:
+
+  Test string: 893751|Red Lake|Lake|NM|35|Eddy|015|322752N|1035355W|32.464358|-103.8986451|||||964|3163|Tower Hill South|11/13/1980|06/24/2011
+
+  Student's string bundle:
+     0:  [893751]
+     1:  [Red Lake]
+     2:  [Lake]
+     3:  [NM]
+     4:  [35]
+     5:  [Eddy]
+     6:  [015]
+     7:  [322752N]
+     8:  [1035355W]
+     9:  [32.464358]
+    10:  [-103.8986451]
+    11:  []
+    12:  []
+    13:  []
+    14:  []
+    15:  [964]
+    16:  [3163]
+    17:  [Tower Hill South]
+    18:  [11/13/1980]
+
+   score for this test: 20 / 20
+--------------------------------------------------
+
+   4 >> total score for GIS record parsing: 200 / 200
